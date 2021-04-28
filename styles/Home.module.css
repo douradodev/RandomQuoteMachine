@@ -1,0 +1,184 @@
+.back1 {
+  height: 100vh;
+  background-color: rgb(171, 178, 247);
+  padding: 3rem;
+}
+
+.back2{
+  height: 100vh;
+  background-color: rgb(161, 253, 225);
+  padding: 3rem;
+}
+
+.back3{
+  height: 100vh;
+  background-color: rgb(239, 253, 161);
+  padding: 3rem;
+}
+
+.back4 {
+  height: 100vh;
+  background-color: rgb(253, 161, 225);
+  padding: 3rem;
+  
+}
+.main {
+  background: rgb(253, 253, 253);
+  padding: 10rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 42px;
+  text-align: center;
+}
+
+.title1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(161, 167, 253);
+  text-shadow: rgba(36, 36, 36, 0.705) 1px 1px 2px;
+}
+.title2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(161, 253, 222);
+  text-shadow: rgba(31, 31, 31, 0.801) 1px 1px 2px;
+}
+.title3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(239, 253, 161);
+  text-shadow: rgba(41, 41, 41, 0.795) 1px 1px 2px;
+}
+.title4 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(253, 161, 225);
+  text-shadow: rgba(43, 42, 42, 0.795) 1px 1px 2px;
+}
+
+
+.card1 {
+  margin: 1rem;
+  flex-basis: 54%;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card1:hover,
+.card1:focus,
+.card1:active {
+  color: #575757;
+  border-color: #1000a1;
+}
+.card2 {
+  margin: 1rem;
+  flex-basis: 54%;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card2:hover,
+.card2:focus,
+.card2:active {
+  color: #757575;
+  border-color: #008f30;
+}
+.card3 {
+  margin: 1rem;
+  flex-basis: 54%;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card3:hover,
+.card3:focus,
+.card3:active {
+  color: #757575;
+  border-color: #aa9f00;
+}
+.card4 {
+  margin: 1rem;
+  flex-basis: 54%;
+  padding: 1rem;
+  border-radius: 6px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card4:hover,
+.card4:focus,
+.card4:active {
+  color: #707070;
+  border-color: #86007b;
+}
+
+.card1 {
+	background-color:rgb(161, 167, 253);
+	border:1px solid #bd70fc;
+
+	color:#562bf1;
+	font-weight:bold;
+
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 2px #ffffff;
+}
+
+.card2 {
+	background-color: rgb(161, 253, 222);
+	border:1px solid #7bfdb1;
+
+	color:#00bb19;
+	font-weight:bold;
+
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 2px #ffffff;
+}
+
+.card3 {
+	background-color:rgb(239, 253, 161);
+	border:1px solid #fdff87;
+
+	color:#c5c903;
+	font-weight:bold;
+
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 2px #ffffff;
+}
+
+.card4 {
+	background-color:rgb(253, 161, 225);
+	border:1px solid #ee6aff;
+
+	color:#c508b5;
+	font-weight:bold;
+
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 2px #ffffff;
+}
+
+.red {
+  
+  background-color:#e0f8fc00;
+	border:1px solid #8ec9fa6c;
+  margin: 4px;
+  flex-basis: 50%;
+  padding: 6px;
+  border-radius: 5px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  position: relative;
+  top: 60px;
+  left: -100px;
+}
+
+
+.red:hover,
+.red:focus,
+.red:active {
+  color: #007de4;
+  border-color: #8eb5ff;
+}
