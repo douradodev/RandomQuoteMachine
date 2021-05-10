@@ -1,13 +1,15 @@
-/*React*/
-
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
-
-
-
+import { connect, createStoreHook, Provider, useStore } from 'react-redux'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { fab, faFacebook, faGithub, faInstagram, faLinkedin, faTumblr, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import React from 'react'
+import {createStore} from 'redux'
+library.add(fab)
 
 export default function Home(func) {
   const citations = [
@@ -112,6 +114,8 @@ export default function Home(func) {
   const [autor, setautor] = useState(citations[1]);
   let len = frase.length
   let back = len < 35 ? styles.back1 : len < 50 ? styles.back2: len < 65 ? styles.back3: styles.back4
+  let icons = len < 35 ? styles.icons1 : len < 50 ? styles.icons2: len < 65 ? styles.icons3: styles.icons4
+  let red = len < 35 ? styles.red1 : len < 50 ? styles.red2: len < 65 ? styles.red3: styles.red4
   let title = len < 35 ? styles.title1 : len < 50 ? styles.title2: len < 65 ? styles.title3: styles.title4
   let card = len < 35 ? styles.card1 : len < 50 ? styles.card2: len < 65 ? styles.card3: styles.card4
 
@@ -129,12 +133,29 @@ export default function Home(func) {
       setautor('ERRO !');
       setfrase('Algo de errado aconteceu com a busca aleatória');
     }
+    
   } 
   return (
     <div className = {back} id = 'quote-box'>
       <Head>
         <title>FCC: Random Quote Machine!</title>
       </Head>
+      <div className={styles.navsup}>
+        <ul >
+          <a className={icons} href="https://github.com/douradodev" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} width='1.5rem' />
+          </a>
+          <a className={icons} href="https://www.instagram.com/douradoxx/?hl=pt-br" target="_blank" rel="noopener noreferrer" >
+            <FontAwesomeIcon icon={faInstagram} width='1.5rem'/>
+          </a>
+          <a className={icons} href="https://www.linkedin.com/in/victor-dourado-610477207/" target="_blank" rel="noopener noreferrer" >
+            <FontAwesomeIcon icon={faLinkedin} width='1.5rem'/>
+          </a>
+          <a className={icons} href="https://www.facebook.com/victor.dourado.376/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebook} width='1.5rem' />
+          </a>
+        </ul>
+      </div>
       <div className= {styles.main}>
         <div >
           <h1 className = {title} id = 'text'>
@@ -143,37 +164,20 @@ export default function Home(func) {
           <p className = {title} id = 'author'>
             {autor}
           </p>
-          <button  className = {card} id = 'new-quote' onClick={() => {clicar(citations)}} >
-              New !
-          </button>
         </div>
+        <button  className = {red} id = 'new-quote' onClick={() => {clicar(citations)}} >
+          New citation!
+          </button>
         <div>
-          <a href="https:twitter.com/intent/tweet" target= '_blank'>
-            <button className = {styles.red} id = 'tweet-quote'>
-              <Image
-                src = '/images/tweet.png'
-                height = {27}
-                width = {30}
-                alt = 'tweet'
-              />
-            </button>
+          <a className={red} href="https:twitter.com/intent/tweet" target= '_blank' id = 'tweet-quote'>
+            <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a href="https://www.tumblr.com/?language=pt_BR" target= '_blank'>
-            <button className = {styles.red} id = 'tumblr-quote'>
-              <Image
-                src = '/images/tumblr.png'
-                height = {27}
-                width = {30}
-                alt = 'tweet'
-              />
-            </button>
+          <a className= {red} href="https://www.tumblr.com/?language=pt_BR" target= '_blank' id = 'tumblr-quote'>
+            <FontAwesomeIcon icon={faTumblr} />
           </a>
         </div>
       </div>
     </div>
   )
 }
-
-
-/*Redux*/
 
