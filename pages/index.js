@@ -117,7 +117,6 @@ export default function Home(func) {
   let icons = len < 35 ? styles.icons1 : len < 50 ? styles.icons2: len < 65 ? styles.icons3: styles.icons4
   let red = len < 35 ? styles.red1 : len < 50 ? styles.red2: len < 65 ? styles.red3: styles.red4
   let title = len < 35 ? styles.title1 : len < 50 ? styles.title2: len < 65 ? styles.title3: styles.title4
-  let card = len < 35 ? styles.card1 : len < 50 ? styles.card2: len < 65 ? styles.card3: styles.card4
 
   const clicar = (citations) => {
     var num = parseInt(Math.random() * 96 + 0, 10);
