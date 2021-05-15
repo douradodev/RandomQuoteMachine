@@ -1,14 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Link from 'next/link'
-import Image from 'next/image'
 import { useState } from 'react'
-import { connect, createStoreHook, Provider, useStore } from 'react-redux'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab, faFacebook, faGithub, faInstagram, faLinkedin, faTumblr, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import React from 'react'
-import {createStore} from 'redux'
+
 library.add(fab)
 
 export default function Home(func) {
