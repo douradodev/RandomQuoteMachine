@@ -137,6 +137,7 @@ export default function Home(func) {
         <title>FCC: Random Quote Machine!</title>
       </Head>
       <div className={styles.navsup}>
+        <p className= {styles.victor}>Desenvolvido por Victor Dourado</p>
         <ul >
           <a className={icons} href="https://github.com/douradodev" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} width='1.5rem' />

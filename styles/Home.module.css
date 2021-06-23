@@ -13,28 +13,28 @@
   margin: 15px;
   font-size: 20px;
   padding: 8px;
-  transition: 1s;
+  transition: 0.3s;
 }
 .icons2{
   color: rgb(161, 253, 225);
   margin: 15px;
   font-size: 20px;
   padding: 8px;
-  transition: 1s;
+  transition: 0.3s;
 }
 .icons3{
   color: rgb(239, 253, 161);
   margin: 15px;
   font-size: 20px;
   padding: 8px;
-  transition: 1s;
+  transition: 0.3s;
 }
 .icons4{
   color: rgb(253, 161, 225);
   margin: 15px;
   font-size: 20px;
   padding: 8px;
-  transition: 1s;
+  transition: 0.3s;
 }
 .icons1:hover,
 .icons1:active,
@@ -98,14 +98,14 @@
   align-items: center;
   border-radius: 42px;
   text-align: start;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .title1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgb(161, 167, 253);
   text-shadow: rgb(0, 0, 0) 1px 1px 1px;
-  transition: 1s;
+  transition: 1s ;
 }
 .title2 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -137,7 +137,7 @@
   font-weight:bold;
 	text-decoration:none;
 	text-align:center;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 
@@ -159,7 +159,7 @@
   font-weight:bold;
 	text-decoration:none;
 	text-align:center;
-  transition: 1s;
+  transition: 0.5s;
 	
 }
 
@@ -182,7 +182,7 @@
   font-weight:bold;
 	text-decoration:none;
 	text-align:center;
-	transition: 1s;
+	transition: 0.5s;
 }
 
 
@@ -204,7 +204,7 @@
   font-weight:bold;
 	text-decoration:none;
 	text-align:center;
-	transition: 1s;
+	transition: 0.5s;
 }
 
 
@@ -212,4 +212,12 @@
 .red4:active {
   background-color: rgb(253, 161, 225) ;
   color: rgba(0, 0, 0, 0.863);
+}
+
+.victor{
+  background-color: lightblue;
+  color: black;
+  border-radius: 6px;
+  padding: 7px;
+  font-size: 18px;
 }
